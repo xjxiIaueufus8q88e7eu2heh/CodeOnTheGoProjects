@@ -1,0 +1,156 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/CodeOnTheGoProjects/ass/app/src/main/java/com/example/ass/MainActivity.java",
+      "selection": {
+        "end": {
+          "column": 55,
+          "index": 157,
+          "line": 5
+        },
+        "start": {
+          "column": 55,
+          "index": 157,
+          "line": 5
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/CodeOnTheGoProjects/ass/settings.gradle.kts",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/CodeOnTheGoProjects/ass/app/src/main/cpp/CMakeLists.txt",
+      "selection": {
+        "end": {
+          "column": 1,
+          "index": 1047,
+          "line": 46
+        },
+        "start": {
+          "column": 1,
+          "index": 1047,
+          "line": 46
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/CodeOnTheGoProjects/ass/app/src/main/res/layout/activity_main.xml",
+      "selection": {
+        "end": {
+          "column": 30,
+          "index": 496,
+          "line": 12
+        },
+        "start": {
+          "column": 30,
+          "index": 496,
+          "line": 12
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/CodeOnTheGoProjects/ass/app/src/main/cpp/android/JNI.cpp",
+      "selection": {
+        "end": {
+          "column": 4,
+          "index": 197,
+          "line": 12
+        },
+        "start": {
+          "column": 4,
+          "index": 197,
+          "line": 12
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/CodeOnTheGoProjects/ass/app/src/main/cpp/core/Engine.h",
+      "selection": {
+        "end": {
+          "column": 1,
+          "index": 303,
+          "line": 32
+        },
+        "start": {
+          "column": 1,
+          "index": 303,
+          "line": 32
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/CodeOnTheGoProjects/ass/app/src/main/cpp/core/Engine.cpp",
+      "selection": {
+        "end": {
+          "column": 4,
+          "index": 537,
+          "line": 44
+        },
+        "start": {
+          "column": 4,
+          "index": 537,
+          "line": 44
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/CodeOnTheGoProjects/ass/app/src/main/cpp/thread/Worker.h",
+      "selection": {
+        "end": {
+          "column": 1,
+          "index": 384,
+          "line": 27
+        },
+        "start": {
+          "column": 1,
+          "index": 384,
+          "line": 27
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/CodeOnTheGoProjects/ass/app/src/main/cpp/thread/Worker.cpp",
+      "selection": {
+        "end": {
+          "column": 1,
+          "index": 1138,
+          "line": 76
+        },
+        "start": {
+          "column": 1,
+          "index": 1138,
+          "line": 76
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/CodeOnTheGoProjects/ass/app/src/main/cpp/event/EventLoop.h",
+      "selection": {
+        "end": {
+          "column": 1,
+          "index": 258,
+          "line": 24
+        },
+        "start": {
+          "column": 1,
+          "index": 258,
+          "line": 24
+        }
+      }
+    }
+  ],
+  "projectPath": "/storage/emulated/0/CodeOnTheGoProjects/ass",
+  "selectedFile": "/storage/emulated/0/CodeOnTheGoProjects/ass/app/src/main/cpp/event/EventLoop.h"
+}
