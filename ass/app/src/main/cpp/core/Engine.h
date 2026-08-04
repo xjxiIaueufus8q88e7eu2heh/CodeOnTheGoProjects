@@ -1,5 +1,5 @@
 #pragma once
-
+#include "../network/Listener.h"
 #include "../thread/Worker.h"
 #include "../event/EventLoop.h"
 
@@ -20,7 +20,7 @@ private:
 
     Worker worker_;
     EventLoop loop_;
-
+    Listener listener_;
     bool initialized_;
     bool running_;
 };

@@ -1,8 +1,5 @@
 #include "Worker.h"
-
-#include <android/log.h>
-
-#define LOG_TAG "NativeProxy"
+#include "../common/Logger.h"
 
 namespace nativeproxy {
 
@@ -27,10 +24,7 @@ bool Worker::Start(const std::function<void()>& callback)
 
     thread_ = std::thread(&Worker::ThreadMain, this);
 
-    __android_log_print(
-            ANDROID_LOG_INFO,
-            LOG_TAG,
-            "Worker thread created");
+    Logger::Info("Worker thread created");
 
     return true;
 }
@@ -45,10 +39,7 @@ void Worker::Stop()
     if (thread_.joinable())
         thread_.join();
 
-    __android_log_print(
-            ANDROID_LOG_INFO,
-            LOG_TAG,
-            "Worker stopped");
+    Logger::Info("Worker stopped");
 }
 
 bool Worker::Running() const
@@ -58,20 +49,14 @@ bool Worker::Running() const
 
 void Worker::ThreadMain()
 {
-    __android_log_print(
-            ANDROID_LOG_INFO,
-            LOG_TAG,
-            "Worker thread started");
+    Logger::Info("Worker thread started");
 
     if (callback_)
     {
         callback_();
     }
 
-    __android_log_print(
-            ANDROID_LOG_INFO,
-            LOG_TAG,
-            "Worker thread exited");
+    Logger::Info("Worker thread exited");
 }
 
 }

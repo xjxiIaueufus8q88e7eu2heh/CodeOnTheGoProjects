@@ -7,6 +7,10 @@ add_library(native-lib SHARED
     core/Engine.cpp
     event/EventLoop.cpp
     thread/Worker.cpp
+    common/Logger.cpp
+    network/Address.cpp
+    network/Listener.cpp
+    network/Connection.cpp
 )
 
 # OpenSSL

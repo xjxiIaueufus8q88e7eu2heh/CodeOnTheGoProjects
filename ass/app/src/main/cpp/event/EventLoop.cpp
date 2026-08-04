@@ -1,8 +1,5 @@
 #include "EventLoop.h"
-
-#include <android/log.h>
-
-#define LOG_TAG "NativeProxy"
+#include "../common/Logger.h"
 
 namespace nativeproxy {
 
@@ -48,27 +45,19 @@ bool EventLoop::Initialize()
 
     initialized_ = true;
 
-    __android_log_print(
-            ANDROID_LOG_INFO,
-            LOG_TAG,
-            "EventLoop initialized");
+    Logger::Info("EventLoop initialized");
+
 
     return true;
 }
 
 void EventLoop::Run()
 {
-    __android_log_print(
-            ANDROID_LOG_INFO,
-            LOG_TAG,
-            "EventLoop running");
+    Logger::Info("EventLoop running");
 
     uv_run(&loop_, UV_RUN_DEFAULT);
 
-    __android_log_print(
-            ANDROID_LOG_INFO,
-            LOG_TAG,
-            "EventLoop stopped");
+    Logger::Info("EventLoop stopped");
 }
 
 void EventLoop::Stop()
@@ -86,10 +75,7 @@ uv_loop_t* EventLoop::Get()
 
 void EventLoop::OnHeartbeat(uv_timer_t* handle)
 {
-    __android_log_print(
-            ANDROID_LOG_INFO,
-            LOG_TAG,
-            "Heartbeat");
+    Logger::Info("Heartbeat");
 }
 
 }

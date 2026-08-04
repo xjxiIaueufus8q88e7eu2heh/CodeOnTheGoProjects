@@ -1,4 +1,6 @@
 #include "Engine.h"
+#include "../network/Address.h"
+#include "../common/Logger.h"
 
 namespace nativeproxy
 {
@@ -23,6 +25,20 @@ bool Engine::Initialize()
 
     if (!loop_.Initialize())
         return false;
+
+    if (!listener_.Initialize(loop_.Get()))
+        return false;
+
+    Address address("127.0.0.1", 28080);
+
+    if (!listener_.Listen(address))
+        return false;
+
+    Logger::Info(
+            "Address: " +
+            address.Ip() +
+            ":" +
+            std::to_string(address.Port()));
 
     initialized_ = true;
 
