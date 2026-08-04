@@ -11,6 +11,7 @@ add_library(native-lib SHARED
     network/Address.cpp
     network/Listener.cpp
     network/Connection.cpp
+    session/Session.cpp
 )
 
 # OpenSSL
